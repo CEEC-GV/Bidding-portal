@@ -1,0 +1,49 @@
+{
+  "users": {
+    "id": {"label": "Sl No"},
+    "username": {"edit": "1", "label": "Username", "list": "2", "r": "1"},
+    "companyname": {"edit": "1", "label": "Company name", "list": "3", "r": "2"},
+    "email": {"edit": "1", "label": "Primary Email id", "list": "4", "r": "3"},
+    "secondaryemail": {"edit": "1", "label": "Secondary Email id", "list": "4", "r": "3"},
+    "phonenumber": {"edit": "1", "label": "Primary phonenumber", "r": "4"},
+    "secondaryphonenumber": {"edit": "1", "label": "Secondary phonenumber", "r": "4"},
+    "employeeid": {"edit": "1", "label": "Employee Id", "list": "5", "r": "5", "required": "0"},
+    "type": {"edit": "1", "list": "6", "label": "User type", "type": "select", "values": ["ADMIN", "CUSTOMER"], "r": "6"},
+    "level": {"edit": "1", "list": "7", "label": "Level", "type": "select", "values": ["NA", "L1", "L2"], "r": "6"},
+    "holidaylisting": {"edit": "1", "label": "Holiday Listing", "type": "select", "values": ["NONE", "15days", "1month", "1year"], "r": "7"},
+    "holidaytime": {"edit": "1","type":"datetime", "label": "Holiday Listing till", "r": "7", "required": "0"},
+    "status": {"edit": "1", "label": "status", "type": "select", "values": ["PENDING", "BLOCKED", "REJECTED", "DELETED", "APPROVED"], "r": "8"},
+    "action": {"list": "8", "label": "Action"}
+  },
+  "mandates": {
+    "id": {"label": "Sl No"},
+    "mandatekey": {"edit": 0, "list":"2", "label": "Mandate key"},
+    "name": {"edit": 1, "list":"3", "label": "Name", "r": "1", "mandatory": "1", "canhide": "1"},
+    "description": {"edit": 1, "label": "Description", "r": "2", "canhide": "1"},
+    "producttype": {"edit": 1, "label": "Product Type", "r": "3", "canhide": "1", "type":"select", "values": ["SINGLE", "MULTIPLE"]},
+    "productdesc": {"edit": 1, "label": "Product Desc", "r": "3", "canhide": "1", "type":"select", "values": ["EX-MI", "Delivery Assistance"]},
+    "location": {"edit": 1, "label": "Location Description", "r": "4", "canhide": "1"},
+    "products": {"edit": 1, "label": "Product", "r": "4","type":"select", "values": ["2 EH - 2 Ethyl Hexanol", "IBA - Iso Butanol", "NBA - N Butanol", "BA - Butyl Acrylate", "AA - Acrylic Acid", "2 EHA - 2 Ethyl Hexyl Acrylate"], "canhide": "1"},
+    "unit": {"edit": 1, "label": "Unit", "r": "4","type":"select", "values": ["LITRE", "BARREL"], "canhide": "1"},
+    "totalquantity": {"edit": 1, "type": "number", "label": "Total Quantity", "r": "5", "canhide": "1"},
+    "floorquantity": {"edit": 1, "type": "number", "list": "4", "label": "Floor Quantity", "r": "5", "canhide": "1"},
+    "floorprice": {"edit": 1, "type": "number", "list": "5", "label": "Floor Price", "r": "5", "canhide": "1"},
+    "status": {"list": "6", "label": "Status", "canhide": "1"},
+    "quantityticker": {"edit": 1, "type": "number", "label": "Quantity Ticker", "r": "6", "canhide": "1"},
+    "priceticker": {"edit": 1, "type": "number", "label": "Price Ticker", "r": "6", "canhide": "1"},
+    "pricetolerance": {"edit": 1, "type": "number", "label": "Price Tolerence", "r": "6", "canhide": "1"},
+    "quantitytolerence": {"edit": 1, "type": "number", "label": "Maximum Quantity allocation", "r": "7", "canhide": "1"},
+    "startdate": {"edit": 1, "type":"datetime", "label": "Start Date & Time", "r": "7"},
+    "enddate": {"edit": 1, "type":"datetime", "label": "End Date & Time", "r": "7"},
+    "action": {"list": "7", "label": ""}
+  },
+  "bids": {
+    "creator": {"list":"1", "label": "User name"},
+    "mandatekey": {"list": "2", "edit":"1", "label": "Mandate key", "r": "1"},
+    "bidquantity": {"list": "3","edit": 1, "label": "Bid Quantity", "r": "2"},
+    "bidprice": {"list": "4","edit": 1, "label": "Bid Price", "r": "2"},
+    "alloted": {"list": "5","edit": "1", "label": "Alloted", "r": "3"},
+    "status": {"list": "6","edit": "1", "label": "status", "r": "3"},
+    "message": {"list": "7","edit": "1", "label": "Message", "r": "4"}
+  }
+}
